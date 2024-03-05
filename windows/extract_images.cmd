@@ -38,7 +38,7 @@ for %%F in ("%input_dir%\*.mp4", "%input_dir%\*.MP4") do (
         set "filename_no_spaces=!filename: =_!"
         set "output_pattern=%output_dir%\!filename_no_spaces!_%%d.jpg"
         
-        ffmpeg -i "%%~fF" -vf "fps=!fps!" -q:v %qscale% "!output_pattern!"
+        ffmpeg -loglevel error -i "%%~fF" -vf "fps=!fps!" -q:v %qscale% "!output_pattern!"
         
         echo Extracted frames from '%%~fF' to '%output_dir%' with qscale %qscale% and FPS !fps!.
     )
