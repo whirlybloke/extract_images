@@ -36,7 +36,7 @@ for mp4_file in "${input_dir}"/*.mp4 "${input_dir}"/*.MP4; do
         filename_no_spaces="${filename_no_extension// /_}"
         output_pattern="${output_dir}/${filename_no_spaces}_%d.jpg"
         
-        ffmpeg -i "$mp4_file" -vf "fps=${fps}" -q:v "$qscale" "$output_pattern"
+        ffmpeg -loglevel error -i "$mp4_file" -vf "fps=${fps}" -q:v "$qscale" "$output_pattern"
         
         echo "Extracted frames from '$mp4_file' to '$output_dir' with qscale $qscale and FPS $fps."
     fi
