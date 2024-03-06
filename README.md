@@ -12,6 +12,7 @@ The extraction process is powered by FFmpeg, a comprehensive multimedia framewor
 
 - **For macOS Users:**
   - Installation guide: [FFmpeg Installation on macOS](https://ffmpeg.org/download.html#build-mac)
+  - You can also install ffmpeg using Homebrew `brew install ffmpeg`
 
 - **For Windows Users:**
   - Installation guide: [FFmpeg Installation on Windows](https://ffmpeg.org/download.html#build-windows)
