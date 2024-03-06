@@ -54,7 +54,7 @@ Ensure FFmpeg is installed on your system before proceeding with the script usag
     
 5. **Extracted images format**
     - The extracted images will be .jpg and in the format original_video_filename-%d.jpg e.g. DJI_1234.mpg will extract images DJI_1234-1.jpg, DJI_1234-2.jpg as so on
-    - The extracted images will be in the <directory>/extracted_images
+    - The extracted images will be in the `<directory>`/extracted_images
 
 ## Contributing
 
