@@ -68,10 +68,10 @@ Ensure FFmpeg is installed on your system before proceeding with the script usag
   - For one image every 10 seconds, use `interval = 10`
 
 - **Quality (qscale) values:**  
-  - Highest quality: `high` or `1`
+  - Highest quality: `high` or `1` (results in images with quality matching the original video)
   - Medium quality: `medium` or `5`
   - Lowest quality: `low` or `10`
-  - You can also specify a custom qscale number (lower is better quality; default is `high`/`2`)
+  - You can also specify a custom qscale number (lower is better quality; default is `high`/`2`) see ffmpeg docs
 
 ### 4. Extracted Images Format
 
